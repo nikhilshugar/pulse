@@ -8,8 +8,8 @@ while True:
     cpu_percent = psutil.cpu_percent(interval=1)
     #Getting the Ram percent, it is kind of static.
     ram_percent = psutil.virtual_memory().percent
-    print(f"The percentage of CPU being used is {cpu_percent}%")
-    print(f"The percentage of RAM being used is {ram_percent}%")
+    #print(f"The percentage of CPU being used is {cpu_percent}%")
+    #print(f"The percentage of RAM being used is {ram_percent}%")
     db = SessionLocal()
     new_metric = SystemMetric(cpu_percentage = cpu_percent, ram_percentage = ram_percent)
     db.add(new_metric)
