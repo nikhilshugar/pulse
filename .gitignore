@@ -1,0 +1,11 @@
+# Ignore the local SQLite database
+pulse.db
+
+# Ignore virtual environments
+venv/
+.venv/
+env/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
